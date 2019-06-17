@@ -60,4 +60,21 @@ public class In{
 
 	}
 
+	public static long getLong() throws IllegalArgumentException{
+		String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		double value;
+
+		try{
+			value = Double.parseDouble(answer);
+
+		} catch (Exception e) {
+			throw new IllegalArgumentException("Input value for method getLong() should be a numeric value");
+		}
+
+		long longValue = (long) value;
+		return longValue;
+	}
+
 }
