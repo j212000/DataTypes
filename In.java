@@ -77,4 +77,18 @@ public class In{
 		return longValue;
 	}
 
+	public static float getFloat() throws IllegalArgumentException{
+		String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		float value;
+		try{
+			value = Float.parseFloat(answer);
+		} catch (Exception e){
+			throw new IllegalArgumentException("ajlsdkfhasd");
+		}
+
+		return value;
+	}
+
 }
