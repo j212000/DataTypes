@@ -117,5 +117,13 @@ public class In{
 		return value;
 
 	}
+	
+	public static String getString(){
+		String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		return answer;
+
+	}
 
 }
