@@ -12,6 +12,9 @@ public class In{
 		String answer;
 		Scanner input = new Scanner(System.in);
     answer = input.nextLine();
+		if(answer.equals("")){
+			return 0;
+		}
     double value;
     try{
       value = Double.parseDouble(answer);
@@ -30,6 +33,9 @@ public class In{
     String answer;
     Scanner scan = new Scanner(System.in);
     answer = scan.nextLine();
+		if(answer.equals("")){
+			return false;
+		}
     if(answer.equals("True") ||  answer.equals("T") || answer.equals("1") || answer.equals("true")){
       return true;
 
@@ -49,6 +55,9 @@ public class In{
     String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
+		if(answer.equals("")){
+			return 0.0;
+		}
 		double value;
 		try{
 			value = Double.parseDouble(answer);
@@ -64,6 +73,9 @@ public class In{
 		String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
+		if(answer.equals("")){
+			return 0;
+		}
 		double value;
 
 		try{
@@ -81,6 +93,9 @@ public class In{
 		String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
+		if(answer.equals("")){
+			return 0;
+		}
 		float value;
 		try{
 			value = Float.parseFloat(answer);
@@ -95,6 +110,9 @@ public class In{
 		String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
+		if(answer.equals("")){
+			return 0;
+		}
 		double value;
 
 		try{
@@ -111,6 +129,9 @@ public class In{
 		String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
+		if(answer.equals("")){
+			return '0';
+		}
 		char value;
 
 		value = answer.charAt(0);
@@ -122,7 +143,10 @@ public class In{
 		String answer;
 		Scanner scan = new Scanner(System.in);
 		answer = scan.nextLine();
-		return answer;
+		if(answer.equals("")){
+			return "0";
+		}
+		return scan.nextLine();
 
 	}
 
