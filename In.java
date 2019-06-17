@@ -107,4 +107,15 @@ public class In{
 
 	}
 
+	public static char getChar() throws IllegalArgumentException{
+		String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		char value;
+
+		value = answer.charAt(0);
+		return value;
+
+	}
+
 }
