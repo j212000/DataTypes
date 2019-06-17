@@ -45,9 +45,19 @@ public class In{
 
 	}
 
+	public static double getDouble() throws IllegalArgumentException{
+    String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		double value;
+		try{
+			value = Double.parseDouble(answer);
+		} catch(Exception e){
+			throw new IllegalArgumentException("Input value for method getDouble() should be a numeric value.");
+		}
 
-	public static char getChar() {
-    return 'A'; //TODO fix this
+		return value;
+
 	}
 
 }
