@@ -85,10 +85,26 @@ public class In{
 		try{
 			value = Float.parseFloat(answer);
 		} catch (Exception e){
-			throw new IllegalArgumentException("ajlsdkfhasd");
+			throw new IllegalArgumentException("Input value for method getFloat() should be a numeric value.");
 		}
 
 		return value;
+	}
+
+	public static short getShort() throws IllegalArgumentException{
+		String answer;
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextLine();
+		double value;
+
+		try{
+			value = Double.parseDouble(answer);
+		} catch (Exception e){
+			throw new IllegalArgumentException("Input value for method getShort() should be a numeric value.");
+		}
+		short valueShort = (short) value;
+		return valueShort;
+
 	}
 
 }
