@@ -26,9 +26,25 @@ public class In{
 
 	}
 
-	public static Boolean getBool() {
-    return true; //TODO fix this
+	public static Boolean getBool() throws IllegalArgumentException{
+    String answer;
+    Scanner scan = new Scanner(System.in);
+    answer = scan.nextLine();
+    if(answer.equals("True") ||  answer.equals("T") || answer.equals("1") || answer.equals("true")){
+      return true;
+
+    }
+    else if(answer.equals("False") || answer.equals("F") || answer.equals("0")|| answer.equals("false")){
+      return false;
+
+
+    } else {
+      throw new IllegalArgumentException("Input value for method getBool() should be true,T,1,False,false,F,0");
+
+    }
+
 	}
+
 
 	public static char getChar() {
     return 'A'; //TODO fix this
